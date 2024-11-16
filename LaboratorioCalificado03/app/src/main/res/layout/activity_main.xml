@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/colorTecsupBackground">
+
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LaboratorioCalificado03"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTecsupPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+
+        <TextView
+            android:id="@+id/tvSubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programación en Móviles"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorTecsupSecondary"
+            app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_tecsup_logo"
+            android:contentDescription="Logo de Tecsup"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+
+        <Button
+            android:id="@+id/btnIrLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir a Lista de Profesores"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorTecsupPrimary"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="32dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

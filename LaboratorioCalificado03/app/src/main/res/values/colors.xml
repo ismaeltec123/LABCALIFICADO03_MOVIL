@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="textColorPrimary">#000000</color> <!-- Negro -->
+    <color name="textColorSecondary">#6D6D6D</color> <!-- Gris oscuro -->
+    <color name="iconTint">#8C8C8C</color> <!-- Gris claro -->
+    <color name="backgroundLight">#FFFFFF</color> <!-- Blanco -->
+    <color name="darker_gray">#6D6D6D</color> <!-- Blanco -->
+    <color name="colorTecsupBackground">#F5F5F5</color>
+    <color name="colorTecsupPrimary">#003A70</color>
+    <color name="colorTecsupSecondary">#7A8C99</color>
+</resources>

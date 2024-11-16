@@ -1,0 +1,100 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/backgroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Foto del Profesor -->
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:clipToOutline="true"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Foto del Profesor" />
+
+        <!-- Contenedor Vertical para Información -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Nombre Completo -->
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Completo:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Correo con Icono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivCorreo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/ic_dialog_email"
+                    android:contentDescription="Icono de Correo"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/iconTint" />
+
+                <TextView
+                    android:id="@+id/tvCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="correo@ejemplo.com"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Teléfono con Icono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivTelefono"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    android:contentDescription="Icono de Teléfono"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/iconTint" />
+
+                <TextView
+                    android:id="@+id/tvTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+51 123 456 789"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
